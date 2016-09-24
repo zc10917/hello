@@ -11,6 +11,9 @@ def checkLogin():
 def getInformation():
     d(text="游戏").click.wait()
     d(id="android:id/tabs").child()[2].click.wait()
+    d(text="我的战绩").click.wait()
+    d(classmethod="android.webkit.WebView").child()[0].child()[0].child()[0].child()[2].click.wait()
+
 
 
 
@@ -54,4 +57,6 @@ def login(User):
 
 if __name__ == '__main__':
     # login(User=User)
-    d(className="android.widget.RelativeLayout")[2].click.wait()
+    # d(className="android.widget.RelativeLayout")[2].click.wait()
+    d(className="android.webkit.WebView").child()[0].child()[0].click.wait()
+
